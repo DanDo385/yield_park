@@ -1,0 +1,15 @@
+{
+  "solidity.packageDefaultDependenciesContractsDirectory": "contracts",
+  "solidity.packageDefaultDependenciesDirectory": "lib",
+  "solidity.remappings": [
+    "openzeppelin-contracts/=contracts/lib/openzeppelin-contracts/contracts/",
+    "forge-std/=contracts/lib/forge-std/src/"
+  ],
+  "solidity.compileUsingRemoteVersion": "v0.8.24",
+  "solidity.defaultCompiler": "remote",
+  "solidity.includePath": [
+    "contracts/lib/openzeppelin-contracts/contracts",
+    "contracts/lib/forge-std/src"
+  ],
+  "typescript.preferences.includePackageJsonAutoImports": "auto"
+}

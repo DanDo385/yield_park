@@ -1,0 +1,11 @@
+{
+  "name": "contracts",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "forge build",
+    "test": "forge test",
+    "deploy": "forge script script/Deploy.s.sol:Deploy --broadcast --rpc-url http://127.0.0.1:8545",
+    "format": "forge fmt",
+    "lint": "forge fmt --check"
+  }
+}

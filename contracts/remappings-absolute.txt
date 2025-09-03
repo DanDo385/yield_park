@@ -1,0 +1,2 @@
+openzeppelin-contracts/=/Users/danmagro/Desktop/Code/personal projects/yield_park/contracts/lib/openzeppelin-contracts/contracts/
+forge-std/=/Users/danmagro/Desktop/Code/personal projects/yield_park/contracts/lib/forge-std/src/
