@@ -12,7 +12,7 @@ contract RiskConfigTest is Test {
         risk = new RiskConfig(admin, 3000, 4000, 2000);
     }
 
-    function testInitialCaps() public {
+    function testInitialCaps() public view {
         assertEq(risk.maxPerAdapterBps(), 3000);
         assertEq(risk.maxPerAssetBps(), 4000);
         assertEq(risk.maxShiftPerRebalanceBps(), 2000);

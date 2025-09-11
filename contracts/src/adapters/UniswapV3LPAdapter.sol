@@ -73,7 +73,7 @@ contract UniswapV3LPAdapter is IStrategyAdapter {
         return total;
     }
 
-    function currentApr() external view returns (uint256) {
+    function currentApr() external pure returns (uint256) {
         // No APR oracle for LP fees; compute off-chain or via stats. Return 0 here.
         return 0;
     }

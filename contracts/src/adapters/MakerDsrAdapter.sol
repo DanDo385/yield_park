@@ -41,7 +41,7 @@ contract MakerDsrAdapter is IStrategyAdapter {
         return sDai.convertToAssets(shares);
     }
 
-    function currentApr() external view returns (uint256) {
+    function currentApr() external pure returns (uint256) {
         // sDAI accrues in share price; no easy APR view here cross-chain.
         // You can compute implied APR off-chain from share price delta, or query Maker/Spark feeds.
         return 0;

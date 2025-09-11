@@ -44,7 +44,7 @@ contract PendleSYAdapter is IStrategyAdapter {
         catch { return 0; } // fallback
     }
 
-    function currentApr() external view returns (uint256) { return 0; }
+    function currentApr() external pure returns (uint256) { return 0; }
 
     function deposit(uint256 assets) external onlyVault returns (uint256) {
         u.safeTransferFrom(msg.sender, address(this), assets);

@@ -103,7 +103,7 @@ contract DeployWithOptions is Script {
         deployMockAdapters(usdc, weth, gold, silver, bronze, reg);
     }
 
-    function deployRealAdapters(MockERC20 usdc, MockERC20 dai, GoldVault gold, SilverVault silver, BronzeVault bronze, StrategyRegistry reg) internal {
+    function deployRealAdapters(MockERC20 usdc, MockERC20 dai, GoldVault gold, SilverVault silver, BronzeVault /* bronze */, StrategyRegistry reg) internal {
         console2.log("Deploying real protocol adapters...");
         
         // Aave V3 USDC (Gold tier)
@@ -133,7 +133,7 @@ contract DeployWithOptions is Script {
         reg.addAdapter(address(goldDsr));
     }
 
-    function deployAdvancedAdapters(MockERC20 usdc, MockERC20 dai, MockERC20 weth, GoldVault gold, SilverVault silver, BronzeVault bronze, StrategyRegistry reg) internal {
+    function deployAdvancedAdapters(MockERC20 usdc, MockERC20 dai, MockERC20 weth, GoldVault gold, SilverVault silver, BronzeVault /* bronze */, StrategyRegistry reg) internal {
         console2.log("Deploying advanced adapters...");
         
         // Uniswap V3 LP (Silver tier)
@@ -225,7 +225,7 @@ contract DeployWithOptions is Script {
         gold.rebalance(); silver.rebalance(); bronze.rebalance();
     }
 
-    function logDeployment(MockERC20 usdc, MockERC20 dai, MockERC20 weth, GoldVault gold, SilverVault silver, BronzeVault bronze, StrategyRegistry reg) internal {
+    function logDeployment(MockERC20 usdc, MockERC20 dai, MockERC20 weth, GoldVault gold, SilverVault silver, BronzeVault bronze, StrategyRegistry reg) internal pure {
         console2.log("=== YIELD PARK DEPLOYMENT ===");
         console2.log("USDC:", address(usdc));
         console2.log("DAI:", address(dai));

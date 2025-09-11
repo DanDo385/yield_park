@@ -67,7 +67,7 @@ contract UsdcToDaiSDaiAdapter is IStrategyAdapter {
         catch { return 0; }
     }
 
-    function currentApr() external view returns (uint256) {
+    function currentApr() external pure returns (uint256) {
         return 0; // compute off-chain from sDAI share price change or Maker feed
     }
 
